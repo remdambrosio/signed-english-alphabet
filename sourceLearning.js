@@ -10,7 +10,7 @@ var button=1;
 loadDB();
 
  function loadDB(){
-  $.getJSON("activity.json", function(data) {
+  $.getJSON("activityAlphabet.json", function(data) {
    for(i=0;i<data.questionlist.length;i++){
     qbank[i]=[];
     qbank[i][0]=data.questionlist[i].cardfront;
